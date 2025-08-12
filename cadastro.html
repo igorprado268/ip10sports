@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="Igor Prado">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP10sports</title>
+    <link rel="icon" href="imgs/logos/logg-ip10.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="lg1" src="imgs/logos/Design sem nome.png" alt="logo-deitado" width="300px">
+        <!-- Botão hamburguer -->
+        <div class="menuBurguer" id="menuBurguer">
+            ☰
+        </div>
+        <div class="menu" id="menu">
+            <ul class="ul1">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                  <a href="categorias.html">Categorias ▾</a>
+                  <ul class="dropdown-content">
+                    <li><a href="#">Bundesliga - Alemanha</a></li>
+                    <li><a href="#">Brasileirão - Brasil</a></li>
+                    <li><a href="#">La Liga - Espanha</a></li>
+                    <li><a href="#">Premier League - Inglaterra</a></li>
+                    <li><a href="#">Serie A - Itália</a></li>
+                    <li><a href="#">Ligue 1 - França</a></li>
+                    <li><a href="#">Resto do Mundo</a></li>
+                    <li><a href="#">Seleções</a></li>
+                  </ul>
+                </li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+              </ul>
+        </div>
+        <div class="caixa-de-pesquisa">
+            <input type="text" placeholder="Digite aqui...">
+            <label for="check" class="icon">
+                <i class="fas fa-search"></i>
+            </label>
+        </div>
+    </header>
+
+    <div class="formulario">
+        <form>
+            <div class="form">
+                <h1>Faça seu Cadastro</h1>
+                <label for="username">Nome de usuário</label>
+                <input type="text" id="username" class="username" placeholder="Crie um nome de usuário..." required>
+                <label for="email">Email</label>
+                <input type="text" id="email" class="email" placeholder="Digite seu email..." required>
+                <label for="password">Crie uma senha</label>
+                <input type="text" id="password" class="username" placeholder="Crie uma senha segura..." required>
+                <label for="passwordConfirm">Confirmação de senha</label>
+                <input type="text" id="passwordConfirm" class="username" placeholder="Repita sua senha..." required>
+                <a href="#" class="botao">Cadastrar</a>
+            </div>
+        </form>    
+    </div>    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 IP10sports. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        menuHamburguer();
+    </script>
+</body>
+
+</html>

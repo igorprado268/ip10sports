@@ -1,0 +1,477 @@
+/* Estilo Global */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "SUSE", sans-serif;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: "SUSE", sans-serif;
+    
+}
+.menu{
+    text-align: center; 
+    font-family: "SUSE", sans-serif;
+    font: normal;
+    margin-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.caixa-de-pesquisa{
+    width: 300px;
+    height: 35px;
+    box-shadow: 0 0 10px black;
+    position: relative;
+    border-radius: 25px;
+}
+
+.caixa-de-pesquisa input{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: cyan;
+    font-size: 14px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 0 25px 25px 0;
+    color: black;
+    padding-bottom: 15px;
+}
+.icon:hover{
+    background-color: black;
+    color: cyan;
+    height: 120;
+    width: 50px;
+    border-radius: 16px;
+    transition: 0.5s
+}
+
+.d,a{
+    color: cyan;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+header{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.lg1{
+    display: flex;
+    align-items: flex-start;
+    
+
+}
+
+.ul1{
+    color: cyan;
+}
+a:hover{
+    color: white;
+    transition: 0.7s;
+    
+}
+a:active{
+    color: white;
+}
+
+.search:active{
+    background-color: cyan;
+}
+
+
+body {
+    font-family: "SUSE", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+        /* -------------------Seção de Destaque----------------------- */
+.hero {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    padding: 50px 20px;
+    color: #020202;
+    text-align: center;
+}
+
+.btn {
+    background-color: #1bf1f1;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: "SUSE", sans-serif;
+}
+
+.btn:hover{
+    background-color: #1bf1f1a9;
+    color: #00000096;
+    transition: 0.5s;
+}
+
+/* ----------------------Seção de Produtos em Destaque--------------------------- */
+.featured-products {
+    padding: 20px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product img {
+    width: 290px;
+    height: 300px;
+    padding-top: 8px ;
+}
+
+.product{
+    width: 310px;
+    height: 480px;
+    border: solid 0.5px rgb(168, 168, 168);
+    border-radius: 5px;
+    line-height: 20px;
+}
+.product:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+
+
+.product h3, .product p{
+    margin: 10px 0;
+}
+
+.product .btn{
+    margin-top: 110px;
+}
+
+/* ------------------------------------Seção de Ofertas------------------------- */
+.offers {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer img {
+    width: 200px;
+    height: 200px;
+}
+
+.offer-text {
+    padding: 10px;
+}
+
+/* ------------------Rodapé----------------------------- */
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.preco{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* --------------------------Formulário------------------------- */
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    border: solid 1.5px black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form label, .form input, .botao {
+    display: block;
+    margin-bottom: 15px; /* Espaço entre os itens */
+    width: 100%; /* Faz o elemento ocupar toda a largura disponível */
+    padding: 5px;
+}
+
+.form input {
+    padding: 10px; /* Adiciona preenchimento para o campo de entrada */
+    border: solid 1px rgb(136, 131, 131);
+    border-radius: 10px;
+}
+
+.botao {
+    text-align: center; /* Centraliza o texto no botão */
+    padding: 10px;
+    display: block;
+    width: 100%; /* Permite que o botão tenha largura baseada no conteúdo */
+    background-color: #000000;
+    color: #1bf1f1;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.botao:hover{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "SUSE", sans-serif;
+    background-color: #1bf1f1;
+    color: #000000;
+    transition: 0.9s;
+    animation: alternate-reverse;
+}
+
+/* -------------------------------pág de vendas dos produtos------------------------ */
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.detalhesProduto{
+    display: flex;
+    gap: 40px;
+}
+.galeriaProduto{
+    flex: 1;
+}
+.galeriaProduto img{
+    width: 100%;
+    border-radius: 10px;
+}
+.galeriaThumbnails{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.galeriaThumbnails img{
+    width: 70px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.galeriaThumbnails img:hover{
+    border: 2px solid rgb(0, 255, 255);
+    
+}
+.infoProduto{
+    flex: 1;
+}
+.infoProduto h2{
+    font-size: 2.5rem;
+}
+.preco{
+    font-size: 2.2rem;
+    color: cyan;
+}
+.descricao{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.botoes{
+    display: flex;
+    gap: 15px;
+    
+}
+.addCarrinho, .comprar{
+    padding: 15px 30px;
+    background-color: cyan;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.addCarrinho{
+    background-color: aquamarine;
+}
+.addCarrinho, .comprar:hover{
+    border: 2px solid black;
+}
+
+ /* ----------------------------------Estilos básicos do menu------------------------------ */
+ .ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #000; /* ajuste para combinar com seu header */
+  }
+  
+  .ul1 li {
+    position: relative;
+  }
+  
+  .ul1 li a {
+    display: block;
+    /* color: white; */
+    text-decoration: none;
+    padding: 14px 20px;
+  }
+  
+  /* --------------------Submenu escondido por padrão----------------------------- */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000; /* ou outra cor que preferir */
+    min-width: 220px;
+    z-index: 1;
+  }
+  
+  .dropdown-content li a {
+    padding: 12px 16px;
+  }
+  
+  /* Mostrar submenu ao passar o mouse */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  /* ===================== MEDIA QUERIES ============= */
+
+/* ---------------Versao para Tablets----------------- */
+@media (max-width: 1024px) {
+    .products {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product {
+        width: 45%;
+    }
+
+    .offer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offer img {
+        width: 80%;
+        height: auto;
+    }
+
+    .detalhesProduto {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ---------------Versao para Celulares--------------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .offer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* ----------------Botão hamburguer - escondido no desktop------------- */
+.menuBurguer {
+    display: none;
+    font-size: 28px;
+    color: cyan;
+    cursor: pointer;
+    background: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    /* Esconde menu por padrão */
+    .menu {
+        display: none;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        transition: max-height 0.7s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Mostra o botão hamburguer */
+    .menuBurguer {
+        display: block;
+    }
+
+    /* Quando ativar */
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        max-height: 500px; /* altura suficiente para o menu expandir */
+    }
+}

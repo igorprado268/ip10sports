@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="Igor Prado">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP10sports</title>
+    <link rel="icon" href="imgs/logos/logg-ip10.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="lg1" src="imgs/logos/Design sem nome.png" alt="logo-deitado" width="300px">
+        <!-- Botão hamburguer -->
+        <div class="menuBurguer" id="menuBurguer">
+            ☰
+        </div>
+
+        <div class="menu" id="menu" >
+            <ul class="ul1">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                  <a href="categorias.html">Categorias ▾</a>
+                  <ul class="dropdown-content">
+                    <li><a href="#">Bundesliga - Alemanha</a></li>
+                    <li><a href="#">Brasileirão - Brasil</a></li>
+                    <li><a href="#">La Liga - Espanha</a></li>
+                    <li><a href="#">Premier League - Inglaterra</a></li>
+                    <li><a href="#">Serie A - Itália</a></li>
+                    <li><a href="#">Ligue 1 - França</a></li>
+                    <li><a href="#">Resto do Mundo</a></li>
+                    <li><a href="#">Seleções</a></li>
+                  </ul>
+                </li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+              </ul>
+        </div>
+        <div class="caixa-de-pesquisa">
+            <input type="text" placeholder="Digite aqui...">
+            <label for="check" class="icon">
+                <i class="fas fa-search"></i>
+            </label>
+        </div>
+
+
+    </header>
+    <!-- Seção de Destaque -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Bem-vindo à IP10sports!</h2>
+            <p>Explore os melhores produtos esportivos com os melhores preços.</p>
+            <br>
+            <a href="#" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+    
+    <!-- Seção de Produtos em Destaque -->
+    <section class="featured-products">
+        <h2>Produtos em Destaque</h2> <br>
+        <div class="products">
+            <div class="product" id="product">
+                <img src="imgs/produtos/camisaRMDhome23-24/1.png" alt="Produto 1">
+                <h3>Camisa Real Madrid Home</h3>
+                <h3>23/24 Torcedor | Masculina</h3>
+                <p class="preco">R$ 129,90</p>
+                <p>ou 2x de R$ 65,00 sem juros</p>
+                <a href="camisaRMDhome23_24.html" class="btn">Comprar</a>
+            </div>
+            <div class="product" id="product">
+                <img src="imgs/produtos/camisaImiamiaway23-24/1.png" alt="Produto 2">
+                <h3>Camisa Inter Miami Away</h3>
+                <h3>23/24 Torcedor | Masculina</h3>
+                <p class="preco">R$ 129,90</p>
+                <p>ou 2x de R$ 65,00 sem juros</p>
+                <a href="camisaImiamiaway23_24.html" class="btn">Comprar</a>
+            </div>
+            <div class="product" id="product">
+                <img src="imgs/produtos/camisaAl-nassrhome23-24/1.png" alt="Produto 3">
+                <h3>Camisa Al-Nassr Home</h3>
+                <h3>23/24 Torcedor | Masculina</h3>
+                <p class="preco">R$ 129,90</p>
+                <p>ou 2x de R$ 65,00 sem juros</p>
+                <a href="camisaAlNassrhome23_24.html" class="btn">Comprar</a>
+            </div>
+            <div class="product" id="product">
+                <img src="imgs/produtos/camisaAl-hilalhome23-24/1.png" alt="Produto 4">
+                <h3>Camisa Al-Hilal Home</h3>
+                <h3>23/24 Torcedor | Masculina</h3>
+                <p class="preco">R$ 129,90</p>
+                <p>ou 2x de R$ 65,00 sem juros</p>
+                <a href="camisaAlhilalhome23_24.html" class="btn">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Ofertas -->
+    <section class="offers">
+        <h2>Ofertas</h2>
+        <div class="offer">
+            <img src="oferta.jpg" alt="Oferta">
+            <div class="offer-text">
+                <h3>Desconto de 20% em produtos selecionados!</h3>
+                <a href="#" class="btn">Aproveite</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 IP10sports. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        menuHamburguer();
+    </script>
+</body>
+
+</html>
