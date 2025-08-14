@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camisa Al-Hilal - IP10sports</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="imgs/logos/logg-ip10.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -15,7 +16,9 @@
 </head>
 <body>
     <header>
-        <img class="lg1" src="imgs/logos/Design sem nome.png" alt="logo-deitado" width="300px">
+        <a href="index.html">
+            <img class="lg1" src="imgs/logos/Design sem nome.png" alt="logo-deitado" width="300px">
+        </a>
         <!-- Botão hamburguer -->
         <div class="menuBurguer" id="menuBurguer">
             ☰
@@ -67,13 +70,18 @@
             <!-- informações do produto -->
             <div class="infoProduto">
                 <h2>Camisa Al-Hilal Home 23/24</h2>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star</span>
+                <span class="material-icons">star_half</span>
                 <p class="preco">R$149,90</p>
                 <p class="descricao">O manto titular de um clube desconhecido, porém rico,
                 que agora conta com um cracaço, já está disponível,
                  nas cores azul e branco. Você não vai ficar só com vontade né?!</p>
 
                       <div class="botoes">
-                          <button class="addCarrinho">Adicionar ao carrinho</button>
+                          <button class="addCarrinho" id="addCarrinho">Adicionar ao carrinho</button>
                           <button class="comprar">Comprar</button>
                       </div>
             </div>
@@ -102,6 +110,7 @@
     <script>
         trocarImgGaleria();
         menuHamburguer();
+        msgAddCarrinho();
     </script>
 </body>
 

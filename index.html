@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IP10sports</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="imgs/logos/logg-ip10.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -15,7 +16,9 @@
 </head>
 <body>
     <header>
-        <img class="lg1" src="imgs/logos/Design sem nome.png" alt="logo-deitado" width="300px">
+        <a href="index.html">
+            <img class="lg1" src="imgs/logos/Design sem nome.png" alt="logo-deitado" width="300px">
+        </a>
         <!-- Botão hamburguer -->
         <div class="menuBurguer" id="menuBurguer">
             ☰
@@ -50,6 +53,17 @@
 
 
     </header>
+    <div class="carrossel">
+        <!-- imagens do carrossel -->
+        <img src="imgs/banners/banner pc/vista já seu manto.png" alt="banner rotativo 1" id="banner-principal">
+        
+        <span class="material-icons" id="seta-esquerda"> <!--seta esquerda-->
+            arrow_back_ios
+        </span>
+        <span class="material-icons" id="seta-direita"> <!--seta direita-->
+            arrow_forward_ios
+        </span>
+    </div>
     <!-- Seção de Destaque -->
     <section class="hero">
         <div class="hero-text">
@@ -65,7 +79,9 @@
         <h2>Produtos em Destaque</h2> <br>
         <div class="products">
             <div class="product" id="product">
-                <img src="imgs/produtos/camisaRMDhome23-24/1.png" alt="Produto 1">
+                <a href="camisaRMDhome23_24.html">
+                    <img src="imgs/produtos/camisaRMDhome23-24/1.png" alt="Produto 1">
+                </a>
                 <h3>Camisa Real Madrid Home</h3>
                 <h3>23/24 Torcedor | Masculina</h3>
                 <p class="preco">R$ 129,90</p>
@@ -73,7 +89,9 @@
                 <a href="camisaRMDhome23_24.html" class="btn">Comprar</a>
             </div>
             <div class="product" id="product">
-                <img src="imgs/produtos/camisaImiamiaway23-24/1.png" alt="Produto 2">
+                <a href="camisaImiamiaway23_24.html">
+                    <img src="imgs/produtos/camisaImiamiaway23-24/1.png" alt="Produto 2">
+                </a>
                 <h3>Camisa Inter Miami Away</h3>
                 <h3>23/24 Torcedor | Masculina</h3>
                 <p class="preco">R$ 129,90</p>
@@ -81,7 +99,9 @@
                 <a href="camisaImiamiaway23_24.html" class="btn">Comprar</a>
             </div>
             <div class="product" id="product">
-                <img src="imgs/produtos/camisaAl-nassrhome23-24/1.png" alt="Produto 3">
+                <a href="camisaAlNassrhome23_24.html">
+                    <img src="imgs/produtos/camisaAl-nassrhome23-24/1.png" alt="Produto 3">
+                </a>
                 <h3>Camisa Al-Nassr Home</h3>
                 <h3>23/24 Torcedor | Masculina</h3>
                 <p class="preco">R$ 129,90</p>
@@ -89,7 +109,9 @@
                 <a href="camisaAlNassrhome23_24.html" class="btn">Comprar</a>
             </div>
             <div class="product" id="product">
-                <img src="imgs/produtos/camisaAl-hilalhome23-24/1.png" alt="Produto 4">
+                <a href="camisaAlhilalhome23_24.html">
+                    <img src="imgs/produtos/camisaAl-hilalhome23-24/1.png" alt="Produto 4">
+                </a>
                 <h3>Camisa Al-Hilal Home</h3>
                 <h3>23/24 Torcedor | Masculina</h3>
                 <p class="preco">R$ 129,90</p>
@@ -120,6 +142,7 @@
     <script src="script.js"></script>
     <script>
         menuHamburguer();
+        bannerCarrossel();
     </script>
 </body>
 

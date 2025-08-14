@@ -5,13 +5,13 @@
 //     }, 3000); // 3 segundos de atraso
 // }
 
-// Chamar as funções ao carregar a página
-window.onload = function() {
-    // mostrarMensagemDeBoasVindas();
-    // destacarOfertas();
-    formEnviado();
+// // Chamar as funções ao carregar a página
+// window.onload = function() {
+//     // mostrarMensagemDeBoasVindas();
+//     // destacarOfertas();
+//     formEnviado();
     
-}
+// }
 
 
 function formEnviado() {
@@ -65,4 +65,75 @@ function menuHamburguer() {
         menu.classList.toggle('active');
     });
 }
+
+function bannerCarrossel() {
+    const imgsMobileTablet = [
+      "imgs/banners/banner cllr/vista seu manto-cllr.png",
+      "imgs/banners/banner cllr/torc-jog-cllr.png",
+      "imgs/banners/banner cllr/nba-cllr.png"
+    ];
+  
+    const imgsDesktop = [
+      "imgs/banners/banner pc/vista já seu manto.png",
+      "imgs/banners/banner pc/torc-jog.png",
+      "imgs/banners/banner pc/nba.png"
+    ];
+  
+    // Elementos
+    const banner = document.getElementById("banner-principal");
+    const setaEsquerda = document.getElementById("seta-esquerda");
+    const setaDireita  = document.getElementById("seta-direita");
+    if (!banner || !setaEsquerda || !setaDireita) return;
+  
+    // Breakpoint: mobile+tablet até 1024px
+    const mql = window.matchMedia("(max-width: 1024px)");
+  
+    // Estado
+    let imagens = mql.matches ? imgsMobileTablet : imgsDesktop;
+    let indiceAtual = 0;
+  
+    function mostrarImagem() {
+      banner.src = imagens[indiceAtual];
+    }
+  
+    function selecionarConjuntoSePreciso() {
+      const novoConjunto = mql.matches ? imgsMobileTablet : imgsDesktop;
+      if (novoConjunto !== imagens) {
+        imagens = novoConjunto;
+        // mantém o índice dentro do tamanho do novo array
+        indiceAtual = indiceAtual % imagens.length;
+        mostrarImagem();
+      }
+    }
+  
+    // Navegação
+    setaDireita.addEventListener("click", () => {
+      indiceAtual = (indiceAtual + 1) % imagens.length;
+      mostrarImagem();
+    });
+  
+    setaEsquerda.addEventListener("click", () => {
+      indiceAtual = (indiceAtual - 1 + imagens.length) % imagens.length;
+      mostrarImagem();
+    });
+  
+    // Atualiza quando o breakpoint muda (resize, orientação, zoom, etc.)
+    mql.addEventListener("change", selecionarConjuntoSePreciso);
+    window.addEventListener("resize", selecionarConjuntoSePreciso);
+  
+    // Primeira renderização
+    mostrarImagem();
+  }
+
+function msgAddCarrinho(){
+    const addCarrinho = document.getElementById('addCarrinho');
+    addCarrinho.addEventListener('click', function(event){
+        setTimeout(function() {
+            alert('Produto adicionado ao carrinho com sucesso!');
+        }, 1000); // 3 segundos de atraso
+    });
+}
+  
+
+
 
